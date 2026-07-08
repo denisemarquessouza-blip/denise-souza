@@ -1,115 +1,298 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgroInfo por: hugo jeske | Dados e Impacto do Agronegócio</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agro Forte • Futuro Sustentável</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#eef7ec;
+    color:#333;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:24px;
+    margin-bottom:35px;
+}
+
+.botao{
+    display:inline-block;
+    background:#4CAF50;
+    color:white;
+    text-decoration:none;
+    padding:16px 35px;
+    border-radius:40px;
+    font-size:20px;
+    transition:.4s;
+}
+
+.botao:hover{
+    background:#2E7D32;
+    transform:scale(1.05);
+}
+
+/* SEÇÕES */
+
+section{
+    max-width:1200px;
+    margin:auto;
+    padding:80px 20px;
+}
+
+.titulo{
+    text-align:center;
+    color:#2E7D32;
+    font-size:40px;
+    margin-bottom:50px;
+}
+
+/* CARDS */
+
+.cards{
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.card{
+    background:white;
+    width:330px;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-12px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h2{
+    color:#2E7D32;
+    padding:20px 20px 10px;
+}
+
+.card p{
+    padding:0 20px 25px;
+    line-height:1.7;
+}
+
+/* CONTADOR */
+
+.contador{
+    background:linear-gradient(90deg,#2E7D32,#66BB6A);
+    color:white;
+    text-align:center;
+    border-radius:20px;
+    padding:60px;
+}
+
+.numero{
+    font-size:70px;
+    font-weight:bold;
+    margin:20px 0;
+}
+
+button{
+    padding:16px 40px;
+    border:none;
+    border-radius:40px;
+    font-size:20px;
+    cursor:pointer;
+    background:white;
+    color:#2E7D32;
+    font-weight:bold;
+    transition:.4s;
+}
+
+button:hover{
+    transform:scale(1.08);
+}
+
+/* RODAPÉ */
+
+footer{
+    background:#1B5E20;
+    color:white;
+    text-align:center;
+    padding:35px;
+    margin-top:80px;
+}
+
+footer p{
+    margin-top:10px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:800px){
+
+.hero h1{
+    font-size:42px;
+}
+
+.hero p{
+    font-size:20px;
+}
+
+}
+</style>
 </head>
+
 <body>
 
-    <header>
-        <div class="logo">Agro<span>Info</span></div>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#panorama">Panorama</a></li>
-                <li><a href="#pilares">Pilares</a></li>
-                <li><a href="#tecnologia">Tecnologia</a></li>
-            </ul>
-        </nav>
-    </header>
+<div class="hero">
 
-    <section id="inicio" class="hero">
-        <div class="hero-content">
-            <h2>Força da Terra Alimentando o Mundo</h2>
-            <p>Descubra como a união entre a ciências, os trabalhos no campo e a tecnologia transforma o Brasil em uma potência agroambiental global.</p>
-            <a href="#panorama" class="btn">Ver Dados do Setor</a>
-        </div>
-    </section>
+<div>
 
-    <section id="panorama" class="container">
-        <h2>O Agronegócio no Brasil</h2>
-        <p class="subtitulo">A força motriz da economia nacional e a garantia da segurança alimentar.</p>
-        
-        <div class="texto-informativo">
-            <p>O agronegócio é um dos pilares mais sólidos da economia brasileira. O setor não se limita ao que acontece dentro das fazendas: ele engloba desde a fabricação de insumos e maquinários até a industrialização e a distribuição dos produtos finais para o consumidor.</p>
-            <p>Hoje, o Brasil destaca-se como o maior exportador mundial de produtos como soja, carne bovina, café e suco de laranja. Graças aos constantes investimentos em pesquisa agronômica e biotecnologia, o país consegue aumentar sua produção anualmente sem a necessidade de expandir proporcionalmente a área cultivada, preservando os recursos naturais.</p>
-        </div>
+<h1>🌱 Agro Forte</h1>
 
-        <div class="tabela-dados">
-            <h3>Destaques de Produção e Exportação</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Produto</th>
-                        <th>Posição Mundial</th>
-                        <th>Destaque Tecnológico</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Soja</td>
-                        <td>1º Produtor e Exportador</td>
-                        <td>Sementes geneticamente modificadas e fixação biológica de nitrogênio.</td>
-                    </tr>
-                    <tr>
-                        <td>Milho</td>
-                        <td>Entre os maiores exportadores</td>
-                        <td>Cultivo em sistema de rotação (Safrinha) otimizando o solo.</td>
-                    </tr>
-                    <tr>
-                        <td>Carne Bovina</td>
-                        <td>1º Exportador Mundial</td>
-                        <td>Rastreabilidade do rebanho e melhoramento genético.</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
+<p>
+Futuro Sustentável<br>
+Equilíbrio entre produção e meio ambiente.
+</p>
 
-    <section id="pilares" class="secao-escura">
-        <div class="container">
-            <h2>Sustentabilidades do meio ambiente</h2>
-            <p class="subtitulo">Produzir mais com menos recursos é o lema do agro moderno.</p>
-            
-            <div class="grid-cards">
-                <div class="card">
-                    <h3>Plantio Direto</h3>
-                    <p>Técnica que cultiva a terra sem aração prévia. Os restos da colheita anterior protegem o solo contra a erosão, mantêm a umidade e reduzem as emissões de carbono na atmosfera.</p>
-                </div>
-                <div class="card">
-                    <h3>Integração ILPF</h3>
-                    <p>A Integração Lavoura-Pecuária-Floresta diferentes sistemas produtivos na mesma área. Isso otimiza o uso da terra, melhora o bem-estar animal e recupera pastagens degradadas.</p>
-                </div>
-                <div class="card">
-                    <h3>Bioinsumos</h3>
-                    <p>Uso de microrganismos e defensores biológicos para combater pragas e fertilizar a terra, reduzindo drasticamente a dependência de produtos químicos sintéticos.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<a href="#conteudo" class="botao">
+Conhecer o Projeto
+</a>
 
-    <section id="tecnologia" class="container">
-        <h2>A Era da Agricultura 4.0</h2>
-        <div class="conteudo-flex">
-            <div class="texto-flex">
-                <p>O campo se digitalizou. Atualmente, a gestão de uma propriedade rural envolve a análise em tempo real de milhões de dados (Big Data). O monitoramento por satélites e drones permite identificar focos de pragas ou estresse hídrico antes que se espalhem.</p>
-                <p>Além disso, tratores e colheitadeiras guiados por GPS realizam o plantio e a colheita com precisão milimétrica, evitando o desperdício de sementes, combustíveis e defensivos agrícolas.</p>
-            </div>
-        </div>
-    </section>
+</div>
 
-    <footer>
-        <p>&copy; 2026 AgroInfo - Plataforma Educacional sobre o Agronegócio. Dados baseados em relatórios da Embrapa e do Ministério da Agricultura.</p>
-    </footer>
+</div>
+
+<section id="conteudo">
+
+<h1 class="titulo">
+Produzir Hoje, Preservar o Amanhã
+</h1>
+
+<div class="cards">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=800&q=80">
+
+<h2>🌾 Produção Inteligente</h2>
+
+<p>
+A tecnologia aumenta a produtividade agrícola utilizando menos recursos naturais,
+reduzindo desperdícios e fortalecendo o agronegócio.
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80">
+
+<h2>🌳 Preservação Ambiental</h2>
+
+<p>
+Cuidar das florestas, rios, fauna e solo garante equilíbrio ecológico,
+água de qualidade e um futuro melhor para todos.
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80">
+
+<h2>♻ Sustentabilidade</h2>
+
+<p>
+O desenvolvimento sustentável une crescimento econômico,
+produção de alimentos e respeito ao meio ambiente.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="contador">
+
+<h2>🌱 Árvores Plantadas (Simulação)</h2>
+
+<div class="numero" id="contador">
+0
+</div>
+
+<button onclick="plantar()">
+Plantar uma Árvore
+</button>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>Agro Forte • Futuro Sustentável</h2>
+
+<p>
+"Cultivar a terra com responsabilidade é semear um futuro sustentável."
+</p>
+
+</footer>
+
+<script>
+
+let total = 0;
+
+function plantar(){
+
+total++;
+
+document.getElementById("contador").innerHTML = total;
+
+}
+
+</script>
 
 </body>
 </html>
-
-
-
-
-
-
-Nome do Criador:Denise M.souza
